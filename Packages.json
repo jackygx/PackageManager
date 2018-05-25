@@ -1,0 +1,269 @@
+{
+	"Packages": [{
+		"Name": "EasyCpp",
+		"Type": "Framework",
+		"Versions": [{
+			"Version": "1.0",
+			"URL": "https://github.com/jackygx/EasyCpp.git",
+			"Revision": "b94d6cb63218d5f0c78ab5896020a4588e4288c7"
+		}]
+	},
+	{
+		"Name": "IIo",
+		"Type": "Interface",
+		"Versions": [{
+			"Version": "1.0",
+			"URL": "https://github.com/jackygx/IIo.git",
+			"Revision": "62833c60adcd4e81329bd638d2d9c61f2e557c53",
+			"Dependency": [{
+				"Name": "EasyCpp",
+				"Version": "1.0"
+			}]
+		}]
+	},
+	{
+		"Name": "IMultiThread",
+		"Type": "Interface",
+		"Versions": [{
+			"Version": "1.0",
+			"URL": "https://github.com/jackygx/IMultiThread.git",
+			"Revision": "2561ecc553b6dbd196aeb955b02852b87e22d92c",
+			"Dependency": [{
+				"Name": "EasyCpp",
+				"Version": "1.0"
+			}]
+		}]
+	},
+	{
+		"Name": "IServer",
+		"Type": "Interface",
+		"Versions": [{
+			"Version": "1.0",
+			"URL": "https://github.com/jackygx/IServer.git",
+			"Revision": "f97c47c6412dffc64d2dd86886a8a6c0840924f6",
+			"Dependency": [{
+				"Name": "EasyCpp",
+				"Version": "1.0"
+			}]
+		}]
+	},
+	{
+		"Name": "Platform",
+		"Type": "Interface",
+		"Versions": [{
+			"Version": "1.0",
+			"URL": "https://github.com/jackygx/Platform.git",
+			"Revision": "1a5cb00a8b3398e5a818ac8a30329a5ff81072ed",
+			"Dependency": [{
+				"Name": "EasyCpp",
+				"Version": "1.0"
+			}]
+		}]
+	},
+	{
+		"Name": "CmdlineParser",
+		"Type": "Lib",
+		"Versions": [{
+			"Version": "1.0",
+			"URL": "https://github.com/jackygx/CmdlineParser.git",
+			"Revision": "850d44cf29598ca31c01425228a694c35d35c9b6",
+			"Dependency": [{
+				"Name": "EasyCpp",
+				"Version": "1.0"
+			}]
+		}]
+	},
+	{
+		"Name": "MultiThread",
+		"Type": "Lib",
+		"Versions": [{
+			"Version": "1.0",
+			"Platform": "Linux",
+			"URL": "https://github.com/jackygx/MultiThreadLinux.git",
+			"Revision": "fb4e76267e46ecbd7ac28952765ae6fdf7b4ccd5",
+			"Dependency": [{
+				"Name": "EasyCpp",
+				"Version": "1.0"
+			},
+			{
+				"Name": "Platform",
+				"Version": "1.0"
+			},
+			{
+				"Name": "IMultiThread",
+				"Version": "1.0"
+			}]
+		}]
+	},
+	{
+		"Name": "Com",
+		"Type": "Lib",
+		"Versions": [{
+			"Version": "1.0",
+			"Platform": "Linux",
+			"URL": "https://github.com/jackygx/ComLinux.git",
+			"Revision": "69a8ae9124fed39f7ec6578e2a6121e225a04eeb",
+			"Dependency": [{
+				"Name": "EasyCpp",
+				"Version": "1.0"
+			},
+			{
+				"Name": "Platform",
+				"Version": "1.0"
+			},
+			{
+				"Name": "IIo",
+				"Version": "1.0"
+			},
+			{
+				"Name": "MultiThread",
+				"Version": "1.0",
+				"LinkType": "Static"
+			}]
+		}]
+	},
+	{
+		"Name": "Command",
+		"Type": "Lib",
+		"Versions": [{
+			"Version": "1.0",
+			"Platform": "Linux",
+			"URL": "https://github.com/jackygx/CommandLinux.git",
+			"Revision": "232711eea2a741634140fe170e95ab4eb3d5102e",
+			"Dependency": [{
+				"Name": "EasyCpp",
+				"Version": "1.0"
+			},
+			{
+				"Name": "Platform",
+				"Version": "1.0"
+			}]
+		}]
+	},
+	{
+		"Name": "Io",
+		"Type": "Lib",
+		"Versions": [{
+			"Version": "1.0",
+			"Platform": "Linux",
+			"URL": "https://github.com/jackygx/IoLinux.git",
+			"Revision": "15502a5edc34882823f3978244567ec300986698",
+			"Dependency": [{
+				"Name": "EasyCpp",
+				"Version": "1.0"
+			},
+			{
+				"Name": "Platform",
+				"Version": "1.0"
+			},
+			{
+				"Name": "IIo",
+				"Version": "1.0"
+			}]
+		}]
+	},
+	{
+		"Name": "Socket",
+		"Type": "Lib",
+		"Versions": [{
+			"Version": "1.0",
+			"Platform": "Linux",
+			"URL": "https://github.com/jackygx/SocketLinux.git",
+			"Revision": "4805b5219ccf3b5b0c2be7e170358bdaf6a24faf",
+			"Dependency": [{
+				"Name": "EasyCpp",
+				"Version": "1.0"
+			},
+			{
+				"Name": "Platform",
+				"Version": "1.0"
+			},
+			{
+				"Name": "IServer",
+				"Version": "1.0"
+			},
+			{
+				"Name": "IIo",
+				"Version": "1.0"
+			}]
+		}]
+	},
+	{
+		"Name": "Timer",
+		"Type": "Lib",
+		"Versions": [{
+			"Version": "1.0",
+			"Platform": "Linux",
+			"URL": "https://github.com/jackygx/TimerLinux.git",
+			"Revision": "88f5c5dbf20cc72d8da4ff1e0fd73da726491166",
+			"Dependency": [{
+				"Name": "EasyCpp",
+				"Version": "1.0"
+			},
+			{
+				"Name": "Platform",
+				"Version": "1.0"
+			},
+			{
+				"Name": "IServer",
+				"Version": "1.0"
+			},
+			{
+				"Name": "MultiThread",
+				"Version": "1.0",
+				"LinkType": "Static"
+			}]
+		}]
+	},
+	{
+		"Name": "TestFramework",
+		"Type": "Exec",
+		"Versions": [{
+			"Version": "1.0",
+			"URL": "https://github.com/jackygx/TestFramework.git",
+			"Revision": "82ddb39326f745c578937b720e7cf8d8fafec53b",
+			"Dependency": [{
+				"Name": "EasyCpp",
+				"Version": "1.0"
+			},
+			{
+				"Name": "CmdlineParser",
+				"Version": "1.0",
+				"LinkType": "Static"
+			},
+			{
+				"Name": "Io",
+				"Version": "1.0",
+				"LinkType": "Static"
+			}]
+		}]
+	},
+	{
+		"Name": "PackageManager",
+		"Type": "Exec",
+		"Versions": [{
+			"Version": "1.0",
+			"URL": "https://github.com/jackygx/PackageManagerSource.git",
+			"Revision": "e4b23a2d0430e22ac597e4d1311e14ed8d5526d8",
+			"Dependency": [{
+				"Name": "EasyCpp",
+				"Version": "1.0"
+			},
+			{
+				"Name": "CmdlineParser",
+				"Version": "1.0",
+				"LinkType": "Static"
+			},
+			{
+				"Name": "Command",
+				"Version": "1.0"
+			},
+			{
+				"Name": "Io",
+				"Version": "1.0",
+				"LinkType": "Static"
+			}]
+		}]
+	}
+	]
+}
